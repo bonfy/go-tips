@@ -36,8 +36,7 @@ func handleQuery(w http.ResponseWriter, r *http.Request) {
 	// page := query.Get("page") // "1" 如果 没有传值 是 ""
 }
 
-func handleGetJson(w http.ResponseWriter, r *http.Request) {
-
+func handleGetJSON(w http.ResponseWriter, r *http.Request) {
 	status := "ok"
 	msg := "result"
 	result := Resp{Status: status, Result: msg}
@@ -51,7 +50,7 @@ func handleGetJson(w http.ResponseWriter, r *http.Request) {
 	// w.Header().Set("Content-Type", "application/json")
 	// w.Write(js)
 
-	// Case 2: Encode
+	// Case 2: Encoder ResonseWriter
 	enc := json.NewEncoder(w)
 	err := enc.Encode(result)
 	if err != nil {
@@ -66,6 +65,6 @@ func handlePostForm(w http.ResponseWriter, r *http.Request) {
 func main() {
 	http.HandleFunc("/", handleHello)
 	http.HandleFunc("/query", handleQuery)
-	http.HandleFunc("/getjson", handleGetJson)
+	http.HandleFunc("/getjson", handleGetJSON)
 	http.ListenAndServe(":8888", nil)
 }
