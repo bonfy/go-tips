@@ -30,6 +30,7 @@ func handleList(w http.ResponseWriter, r *http.Request) {
 	}
 	rd.JSON(w, http.StatusOK, map[string]interface{}{"status": "ok", "result": people})
 }
+
 func main() {
 	http.HandleFunc("/", handleHello)
 	http.HandleFunc("/obj", handleObject)
@@ -37,3 +38,18 @@ func main() {
 
 	http.ListenAndServe(":8888", nil)
 }
+
+/*
+
+r := render.New(render.Options{
+  DisableHTTPErrorRendering: true,
+})
+
+//...
+
+err := r.HTML(w, http.StatusOK, "example", "World")
+if err != nil{
+  http.Redirect(w, r, "/my-custom-500", http.StatusFound)
+}
+
+*/
