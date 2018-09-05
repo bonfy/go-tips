@@ -11,6 +11,16 @@ tips of go
 
 [Sample](https://github.com/bonfy/go-tips/blob/master/source/01-webserver/main.go)
 
+### 02-json
+> []byte to struct and struct to []byte
+
+[Sample](https://github.com/bonfy/go-tips/blob/master/source/02-json/main.go)
+
+
+### 03-interface
+
+> interface
+
 ## Package
 
 ### [render](https://github.com/unrolled/render)
@@ -19,9 +29,10 @@ tips of go
 
 [Sample](https://github.com/bonfy/go-tips/blob/master/package/01-render/main.go)
 
-### [mapstructure](https://github.com/mitchellh/mapstructure) & [structs](https://github.com/fatih/structs)
+### [mapstructure](https://github.com/mitchellh/mapstructure) And [structs](https://github.com/fatih/structs)
 
 > mapsturcture: map -> structure
+
 > structs: structure -> map
 
 [Sample](https://github.com/bonfy/go-tips/blob/master/package/02-mapstructure/main.go)
