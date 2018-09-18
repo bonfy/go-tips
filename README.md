@@ -29,7 +29,7 @@ tips of go
 
 [Sample](https://github.com/bonfy/go-tips/blob/master/package/01-render/main.go)
 
-### [mapstructure](https://github.com/mitchellh/mapstructure) And [structs](https://github.com/fatih/structs)
+### [mapstructure](https://github.com/mitchellh/mapstructure) & [structs](https://github.com/fatih/structs)
 
 > mapsturcture: map -> structure
 
@@ -37,3 +37,8 @@ tips of go
 
 [Sample](https://github.com/bonfy/go-tips/blob/master/package/02-mapstructure/main.go)
 
+### [gomail](https://github.com/go-gomail/gomail)
+
+> Gomail is a simple and efficient package to send emails. It is well tested and documented.
+
+[Sample](https://github.com/bonfy/go-tips/blob/master/package/03-gomail/main.go)
